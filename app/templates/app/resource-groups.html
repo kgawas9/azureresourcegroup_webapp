@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource groups</title>
+</head>
+<body>
+    <h4>Resource groups available inside subscription id:</h4>
+
+    <table border="1px">
+        <thead>
+            <th>Sr. No</th>
+            <th>Resource group name</th>
+        </thead>
+        <tbody style="text-align: center;">
+            {% for resource in resource_groups %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ resource.name }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

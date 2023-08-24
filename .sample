@@ -1,0 +1,4 @@
+CLIENT_ID=your-client-id
+SECRET_ID=your-secret-id
+TENANT_ID=your-tenant-id
+SUBSCRIPTION_ID=your-subscription-id
